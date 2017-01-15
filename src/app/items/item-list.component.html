@@ -1,0 +1,7 @@
+<h2>Items</h2>
+<ul>
+  <li>Hello</li>
+  <li *ngFor="let item of items"
+    (click)="onSelect(item)">
+    <span class="badge">{{ item.id }}</span> {{ item.name }}</li>
+</ul>
